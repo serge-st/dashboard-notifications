@@ -1,3 +1,4 @@
+import './Notifications.css';
 import { FC } from "react";
 
 const Notifications: FC = () => {

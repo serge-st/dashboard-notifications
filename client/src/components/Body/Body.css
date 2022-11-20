@@ -1,4 +1,6 @@
 .body {
     flex: auto;
+    padding: 60px;
     background: #fff;
+    overflow-y: auto;
 }

@@ -4,7 +4,7 @@ import { FC } from "react";
 const Footer: FC = () => {
     return (
         <footer>
-            footer
+            <h2>Footer</h2>
         </footer>
     );
 };

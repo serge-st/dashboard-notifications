@@ -1,7 +1,8 @@
 import { ReactElement } from "react"
 import Body from "../components/Body/Body";
-import Clients from "../pages/Clients";
-import Notifications from "../pages/Notifications";
+import Loader from "../components/Loader/Loader";
+import Clients from "../pages/Clients/Clients";
+import Notifications from "../pages/Notifications/Notifications";
 
 interface AppRoute {
     path: string

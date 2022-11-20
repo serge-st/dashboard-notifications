@@ -5,23 +5,30 @@ interface ClientState {
     clients: IClient[];
     isLoading: boolean;
     error: string;
-    count: number;
 }
 
 const initialState: ClientState = {
     clients: [],
     isLoading: false,
     error: '',
-    count: 0,
 }
 
 export const clientSlice = createSlice({
     name: 'client',
     initialState,
     reducers: {
-        increment(state, action: PayloadAction<number>) {
-            state.count += action.payload;
-        }
+        clientsFetching(state) {
+            state.isLoading = true;
+        },
+        clientsFetchingSuccess(state, action: PayloadAction<IClient[]>) {
+            state.isLoading = false;
+            state.error = '';
+            state.clients = action.payload;
+        },
+        clientsFetchingError(state, action: PayloadAction<string>) {
+            state.isLoading = false;
+            state.error = action.payload;
+        },
     }
 })
 
