@@ -12,8 +12,10 @@ const Header: FC = () => {
                 <Link to='/'>
                     <button>Home</button>
                 </Link>
+                <Link to='/clients'>
+                    <button>Clients</button>
+                </Link>
                 <button>Orders</button>
-                <button>Clients</button>
                 <button>Statistics</button>
                 <NotificationButton />
             </nav>
