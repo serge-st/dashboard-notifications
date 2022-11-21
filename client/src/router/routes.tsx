@@ -11,6 +11,8 @@ interface AppRoute {
 
 export const appRoutes: AppRoute[] = [
     { path: '/', element: <Body element={<div>Main Page</div>} />},
+    { path: '/orders', element: <Body element={<Loader />} />},
+    { path: '/statistics', element: <Body element={<Loader />} />},
     { path: '/notifications', element: <Body element={<Notifications />} /> },
     { path: '/clients', element: <Body element={<Clients />} /> },
 ];

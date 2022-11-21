@@ -2,18 +2,28 @@ import './Nav.css';
 import { FC } from 'react';
 import NotificationButton from '../NotificationButton/NotificationButton';
 import { Link } from 'react-router-dom';
+import useModal from '../../hooks/useModal';
+import Modal from '../Modal/Modal';
 
 const Nav: FC = () => {
+    const { isOpen, toggle } = useModal();
+
     return (
         <nav>
+            <Modal isOpen={isOpen} toggle={toggle}/>
             <Link to='/'>
                 <button>Home</button>
             </Link>
             <Link to='/clients'>
                 <button>Clients</button>
             </Link>
-            <button>Orders</button>
-            <button>Statistics</button>
+            <Link to='/orders'>
+                <button>Orders</button>
+            </Link>
+            <Link to='/statistics'>
+                <button>Statistics</button>
+            </Link>
+            <button onClick={toggle}>Add Notification</button>
             <NotificationButton />
         </nav>
     );

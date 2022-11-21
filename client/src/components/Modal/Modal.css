@@ -1,0 +1,24 @@
+.modal_overlay {
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.modal_container {
+    display: block;
+    background: #fff;
+    width: 70%;
+    height: 70%;
+    padding: 30px;
+    border-radius: 8px;
+    cursor: context-menu;
+
+}
