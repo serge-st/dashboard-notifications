@@ -1,10 +1,14 @@
 import './DateModule.css';
-import { FC } from "react";
+import { FC } from 'react';
+import { format } from 'fecha';
 
 const DateModule: FC = () => {
+    const date = new Date();
+    const myDate = format(date, 'dddd, YYYY-MM-DD')
+    
     return (
         <div>
-            <h2>Tuesday, 2022-11-22</h2>
+            <h2>{myDate}</h2>
         </div>
     );
 }

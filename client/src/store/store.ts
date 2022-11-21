@@ -2,7 +2,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import clientReducer from './reducers/ClientSlice';
 
 const rootReducer = combineReducers({
-    clientReducer
+    clientReducer,
 });
 
 export const setupStore = () => {
