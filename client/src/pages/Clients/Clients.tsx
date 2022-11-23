@@ -2,7 +2,7 @@ import './Clients.css'
 import { FC, useEffect } from 'react';
 import ClientItem from '../../components/ClientItem/ClientItem';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
-import { fetchClients } from '../../store/reducers/ActionCreators';
+import { fetchClients } from '../../store/reducers/clients/ActionCreators';
 import { clientSlice } from '../../store/reducers/ClientSlice';
 import Loader from '../../components/Loader/Loader';
 

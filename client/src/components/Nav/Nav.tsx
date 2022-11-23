@@ -4,13 +4,17 @@ import NotificationButton from '../NotificationButton/NotificationButton';
 import { Link } from 'react-router-dom';
 import useModal from '../../hooks/useModal';
 import Modal from '../Modal/Modal';
+import AddNotification from '../../pages/AddNotification/AddNotification';
 
 const Nav: FC = () => {
     const { isOpen, toggle } = useModal();
 
     return (
         <nav>
-            <Modal isOpen={isOpen} toggle={toggle}/>
+            {/* <Modal isOpen={true} toggle={toggle}> */}
+            <Modal isOpen={isOpen} toggle={toggle}>
+                <AddNotification />
+            </Modal>
             <Link to='/'>
                 <button>Home</button>
             </Link>

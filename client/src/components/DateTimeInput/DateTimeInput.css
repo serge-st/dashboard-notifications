@@ -1,0 +1,26 @@
+input[type="date"], input[type="datetime-local"] {
+    background-color: #f9f9f9;
+    padding: 0.6em 1.2em;
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.datetime_input {
+    display: inline-block;
+}
+
+.selected_date {
+    display: inline-block;
+}

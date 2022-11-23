@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { IClient } from "../../models/IClient";
+import { IClient } from "../../../models/IClient";
 
 export const fetchClients = createAsyncThunk(
     'client/fetchAll',

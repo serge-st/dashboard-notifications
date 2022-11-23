@@ -1,12 +1,12 @@
 import './Header.css';
 import { FC } from "react";
-import DateModule from '../DateModule/DateModule';
+import HeaderClock from '../HeaderClock/HeaderClock';
 import Nav from '../Nav/Nav';
 
 const Header: FC = () => {
     return (
         <header>
-            <DateModule />
+            <HeaderClock />
             <Nav />
         </header>
     );

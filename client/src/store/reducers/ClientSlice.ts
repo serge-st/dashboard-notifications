@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IClient } from "../../models/IClient"
-import { fetchClients } from "./ActionCreators";
+import { fetchClients } from "./clients/ActionCreators";
 
 interface ClientState {
     clients: IClient[];
